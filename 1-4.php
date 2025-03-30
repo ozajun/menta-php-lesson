@@ -18,17 +18,18 @@ $text = null;
 整数型の２つの変数を宣言してください。
 2つの変数を用いて、足す、引く、かける、割る、割った余りを出力してください
 */
-$num1 = 10; $num2 = 3;
+$num1 = 10; 
+$num2 = 3;
 $total = $num1 + $num2;
-echo $total . PHP_EOL; 
+echo "total: " . $total . PHP_EOL;
 $subtraction = $num1 - $num2;
-echo $subtraction . PHP_EOL;  
+echo "subtraction: " . $subtraction . PHP_EOL;  
 $multiplication = $num1 * $num2;
-echo $multiplication . PHP_EOL;
+echo "multiplication: " . $multiplication .PHP_EOL;
 $division = $num1 / $num2;
-echo $division .PHP_EOL;
+echo "division:" . $division . PHP_EOL;
 $remainder = $num1 % $num2;
-echo $remainder . PHP_EOL;
+echo "remainder: " .$remainder . PHP_EOL;
 
 /* 3. 条件式とboolean(論理型)について
 
@@ -36,9 +37,9 @@ echo $remainder . PHP_EOL;
 
 問題2で宣言した２つの変数を足した結果が偶数であれば、論理型の変数にtrueを代入してください
 */
-$foo = false;
+$is_even = false;
 if ($total / 2 == 0){
-  $foo = true;
+  $is_even = true;
 }
 /* 4. 条件式
 
@@ -47,9 +48,9 @@ if ($total / 2 == 0){
 ・偶数なら..... 「偶数です」
 
 ・奇数なら.....「奇数です」*/
-if ($foo / 2 == 0){
-  echo "「偶数です」";
+if ($is_even / 2 == 0){
+  echo "「偶数です」" . PHP_EOL;
 }else{
-  echo "「奇数です」";
+  echo "「奇数です」" . PHP_EOL;
 }
 ?>
